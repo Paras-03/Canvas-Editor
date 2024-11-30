@@ -1,0 +1,135 @@
+/* Global Styles */
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f7fc;
+	color: #333;
+  }
+  
+  .app {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+  }
+  
+  .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #3c91e6;
+	color: white;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+	height: 75px;
+	width: 75px;
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  .controls {
+	display: flex;
+	gap: 10px;
+  }
+  
+  .btn {
+	padding: 8px 16px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c91e6;
+	background-color: white;
+	border: 1px solid #3c91e6;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .btn:hover {
+	background-color: #3c91e6;
+	color: white;
+  }
+  
+  /* Canvas Section */
+  .canvas-container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .canvas {
+	width: 60vw;
+	height: 60vh;
+	position: relative;
+	border: 2px dashed #3c91e6;
+	background-color: white;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  .text {
+	position: absolute;
+	user-select: none;
+	cursor: move;
+	padding: 4px 8px;
+	font-weight: bold;
+	background-color: rgba(60, 145, 230, 0.1);
+	border: 1px solid #3c91e6;
+	border-radius: 5px;
+  }
+  
+  /* Footer Section */
+  .footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: #3c91e6;
+	color: white;
+  }
+  
+  .edit-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+	width: 300px;
+  }
+  
+  .edit-text input,
+  .edit-text select {
+	padding: 8px;
+	font-size: 16px;
+	margin: 5px 0;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+  }
+  
+  .edit-text select {
+	cursor: pointer;
+  }
+  
+  .edit-text input:focus,
+  .edit-text select:focus {
+	border-color: #3c91e6;
+	outline: none;
+  }
+  
+  /* Grouped Inputs (Font Style and Font Weight) */
+  .style-container {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+  }
+  
+  /* Button Container */
+  .button-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 5px;
+  }
+  
